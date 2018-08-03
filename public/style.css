@@ -1,0 +1,784 @@
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.1vh;
+    color: #696868;
+    text-align: left;
+}
+
+h1 {
+    font-family: Arial-Black;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+}
+
+body.home {
+    background: url('McCotter-Website/public/pics/BashFX_5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 1;
+    overflow: hidden;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body.home:before{
+    content: "";
+    width: 100%;
+    height: 300px;
+    position: fixed;
+    background: url("McCotter-Website/public/pics/BashFX_5.jpg") no-repeat center center fixed;
+    z-index: -10;
+    display: block;
+    left: 0;
+    top: 0;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+  }
+
+body.home .intro .firstWord, body.home .intro .lastWord {
+    display: block;
+}
+
+.bodyOverlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    border: none;
+    background: rgba(0,0,0,0.44);
+}
+
+.navigation {
+    position: fixed;
+    z-index: 1;
+    padding: 2vh;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+    top: 0;
+    transition: all 0.2s linear;
+}
+
+.logo {
+    font-family: 'Italianno', cursive;
+    font-size: 5vh;
+    color: #FF5858; 
+    text-align: left;
+    width: 20%;
+    float: left;
+    padding: 1vh;
+    transition: all 0.3 linear;
+
+}
+
+.logo:hover {
+    color: #d24747;
+}
+
+.tabs {
+    float: right;
+    margin: 0 auto;
+    padding: 2%;
+    margin-right: 3vh;
+}
+
+.tabs > a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vh;
+    color: #696868;
+    text-align: left;
+}
+
+
+.home > .navigation > .tabs a {
+    color: white;
+}
+
+.home > .navigation > .tabs a:hover {
+    color: #c8c8ce;
+}
+
+.aboutTab, .designsTab {
+    margin-right: 3vh;
+}
+
+.intro {
+    position: absolute;
+    top: 60%;
+    /* bottom: 0; */
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    word-wrap: break-word;
+    padding: 0vh 2.5vh;
+}
+
+.intro h1 {
+    font-size: 8vh;
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.period {
+    color: #ee5355;
+}
+
+.social {
+    position: absolute;
+    right: 3vh;
+    bottom: 3vh;
+}
+
+.social img {
+    width: 2vh;
+    height: 2vh;
+}
+
+.social img:first-child {
+    margin-right: 2.4vh;
+}
+
+/** about page **/
+
+body.about {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.about > .navigation, .halloweenAlbum > .navigation, .autumnAlbum > .navigation, .bashAlbum > .navigation, .cabaretAlbum > .navigation,  .cimAlbum > .navigation, .moreAlbum > .navigation, .inspiration > .navigation {
+    background: white;
+}
+
+.activeScroll {
+    box-shadow: 0 0.5em 4em rgba(0, 0, 0, 0.2);
+}
+
+
+.about > .navigation > .tabs > a:not(.activeTab) {
+    color: #696868;
+}
+.about > .navigation > .tabs > a {
+
+    transition: all 0.3s linear;
+}
+
+.about > .navigation > .tabs > a:not(.activeTab):hover {
+    color: #000000;
+    padding: 1vh 2.5vh;
+    width: 100%;
+    border-radius: 100vh;
+    color: white;
+    background: #ff585875;
+}
+
+.tabs > .activeTab {
+    padding: 1vh 2.5vh;
+    width: 100%;
+    border-radius: 100vh;
+    color: white;
+    background: #FF5858; 
+}
+
+
+
+.jumbotron {
+    background: url('McCotter-Website/public/pics/Edward_Scissorhands2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 85vh;
+    width: 100%;
+}
+
+.jumbotron1 {
+    background: url('McCotter-Website/public/pics/Dave_1_0067-min.JPG') center/cover no-repeat fixed;
+}
+
+.clip-text {
+    display: inline-block;
+    color: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4vh;
+    text-align: center;
+    font-family: Arial-Black;
+}
+
+
+/* Use Background-size cover for photo background and no-repeat background */
+.clip-text--cover,
+.clip-text--cover:before {
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+            background-size: cover;
+  background-position: 50% 50%;
+}
+
+.clip-text_one {
+    background-image: url('McCotter-Website/public/pics/Edward_Scissorhands2.jpg');
+}
+
+.highlight {
+    margin-top: 40vh;
+    background: white;
+    position: absolute;
+    padding: 0.5vh;
+    margin-left: 4%;
+    max-width: 90%;
+
+}
+
+.clip-text_two {
+    background-image: url('McCotter-Website/public/pics/models.jpg');
+    font-size: 4vh;
+}
+
+.clip-text_three {
+    background-image: url('McCotter-Website/public/pics/models.jpg');
+    padding: 2vh;
+    font-size: 6vh;
+    border-bottom: 5px solid #f96264cf;
+    padding-left: 0;
+    margin-left: 2vh;
+}
+
+
+
+.aboutText {
+    padding: 4vh;
+}
+
+.about .period {
+    font-size: 5vh;
+    font-family: Arial-Black;
+}
+
+.number {
+    color: white;
+    background: #FF5858;
+    padding: 0.7vh 1.4vh;
+    border-radius: 100%;
+    font-size: 1.3vh;
+}
+
+.job {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.8vh;
+    padding: 2vh;
+    color: #696868;
+}
+/* design page */
+
+.gallery {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: inline-block;
+    left: 0;
+}
+
+body.about, body.halloweenAlbum {
+    padding-top: 12vh;
+}
+
+.row {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+.row a {
+    width: 90%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.album, .album1  {
+    position: relative;
+    position: relative;
+    width: 100%;
+    height: 50%;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.album1 {
+    height: 90%;
+}
+
+.album {
+    margin-top: 5%;
+}
+
+.album > .overlay, .overlay1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    opacity: 0.18;
+    transition: all 0.2s linear;
+
+}
+
+.album > .overlay:hover, .overlay1:hover {
+    opacity: 0.5;
+}
+
+.albumName, .albumName1 {
+    text-align: center;
+    position: absolute;
+    width: 90%;
+    top: 50%;
+    height: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 0.05vh solid white;
+}
+
+.albumName1 {
+    border: none;
+}
+
+.albumName1 > h2 {
+    display: none;
+}
+
+.albumName > h1, .albumName > p, .albumName > h2, .albumName1 > h2  {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    color: white;
+}
+
+.albumName > h1 {
+    font-size: 3.8vh;
+}
+.albumName > p {
+    top: 58%;
+}
+
+.halloweenPic {
+
+    background: url('McCotter-Website/public/pics/Corn_Stalker_model-min.jpg') center/cover no-repeat;
+}
+
+.autumnPic {
+
+    background: url('McCotter-Website/public/pics/Autumn_Queen-min.jpg') center/cover no-repeat;
+}
+
+.bashFxPic {
+
+    background: url('McCotter-Website/public/pics/BASH_FX_Beach_Party2-min.jpg') center/cover no-repeat;
+}
+
+.cabaretPic {
+
+    background: url('McCotter-Website/public/pics/Cabaret\ De\ Paris-min.jpg') center/cover no-repeat;
+}
+
+.cimPic {
+
+    background: url('McCotter-Website/public/pics/CIM-Awards-077b-min.jpg') center/cover no-repeat;
+}
+
+.morePic {
+
+    background: url('McCotter-Website/public/pics/Canadian-Club-Mad-Men-Party-at-the-Trump-Ryan-Emberley-9-min.jpg') center/cover no-repeat;
+}
+
+body.inspiration {
+    padding-top: 13vh;
+}
+
+.inspirationGallery {
+    height: inherit;
+}
+
+.inspirationText .logo {
+    display: none;
+}
+
+.inspiration h1 {
+    border-top: 1px dotted #00000036;
+    padding-top: 3vh;
+    background-color: white;
+    text-align: center;
+    width: 60%;
+
+    margin: 0 auto;
+    margin-top: 6vh;
+    margin-bottom: 5vh;
+    color: #ff1f1fa6;
+}
+
+
+.mySlides {
+    background: rgba(0, 0, 0, 0.22);
+    margin: 0 auto;
+}
+
+
+
+/*media queries*/
+
+@media screen and (min-width: 550px) and (max-width: 740px) {
+    
+    .inspirationText > .clip-text_three {
+        font-size: 4vh;
+    }
+
+}
+@media screen and (min-width: 550px) {
+    .album {
+        display: inline-block;
+        width: 47%;
+        margin: 0.7vh;
+        
+    }
+    .mySlides img {
+        width: 60%;
+    }
+  
+
+    .gallery {
+        text-align: center;
+    }
+
+    .inspirationRow {
+        display: flex;
+        height: 80vh;
+    }
+
+    .inspirationRow img {
+        width: 49%;
+    }
+
+    .inspirationRow .inspirationText {
+        width: 49%;
+        padding: 2vh;
+    }
+
+    .inspirationRow .inspirationText .clip-text {
+        text-align: left;
+    }
+
+}
+
+@media screen and (min-width: 720px) {
+    .album1 {
+        height: 100%;
+        width: 49%;
+        display: inline-block;
+    }
+}
+
+@media screen and (min-width: 740px) {
+    .inspirationText .logo {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    .aboutSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-grow: 1;
+        padding: 4vh;
+    }
+
+    .aboutText {
+        width: 90%
+    }
+
+    .aboutSection2 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: flex-end;
+        flex-grow: 1;
+        padding: 4vh;
+    }
+
+    .aboutSection > .aboutText {
+        padding: 0;
+        padding-right: 4vh;
+    }
+
+    .aboutSection2 > .aboutText {
+        padding: 0;
+        padding-left: 4vh;
+    }
+
+    .aboutText2 {
+        width: 40%;
+        flex-grow: 1.7;
+    }
+
+    .inspirationRow img {
+        width: 44%;
+    }
+
+    .inspirationRow .inspirationText {
+        width: 55%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .album {
+        width: 30%;
+        margin: 1.5vh;
+    }
+
+}
+
+@media screen and (min-width: 834px) {
+    .inspirationText p {
+        font-size: 7.5vh;
+    }
+}
+
+@media screen and (min-width: 840px) {
+    .inspirationRow img {
+        width: 40%;
+    }
+
+    .inspirationRow .inspirationText {
+        width: 60%;
+    }
+
+
+}
+
+@media screen and (min-width: 900px) {
+    .jumbotron {
+        height: 90vh;
+    }
+}
+
+@media screen and (min-width: 990px) {
+    body.home .intro {
+        display: inline-block;
+        top: 40%;
+    }
+
+
+    body.home .intro .firstWord, body.home .intro .lastWord {
+        display: inline;
+    }
+
+    body.home .intro .lastWord {
+        padding-left: 2vh;
+    }
+}
+
+@media screen and (min-width: 1020px) {
+    .album1 {
+        height: 100%;
+        width: 30%;
+        display: inline-block;
+    }
+
+    .bashAlbum  .album1, .cabaretAlbum .album1, .cimAlbum .album1, .moreAlbum .album1{
+        width: 49%;
+    }
+
+    .halloween .album1:last-child {
+        width: 90%;
+    }
+
+    .inspirationRow img {
+        width: 30%;
+    }
+
+    .inspirationRow .inspirationText {
+        width: 70%;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    body.about {
+        padding-top: 13vh;
+        height: 100vh;
+
+    }   
+
+    .jumbotron {
+       height: 100vh;
+
+    }
+}
+
+/*animations*/
+
+.intro {
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+  -webkit-transform: translate3d(0,0,0);
+  -webkit-animation-fill-mode: forwards;
+  white-space:nowrap;
+
+}
+
+.firstWord { 
+  animation: showup 4s forwards;
+  -webkit-animation-fill-mode: forwards;
+
+}
+
+div.intro .lastWord {
+  width:0px;
+  animation: reveal 4s forwards;
+  -webkit-animation-fill-mode: forwards;
+
+}
+
+.intro h1.lastWord {
+  margin-left:-355px;
+  animation: slidein 4s forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navigation, .new-item {
+    margin-right: -30vh;
+    animation: slideinright 0.5s forwards;
+    animation-delay: 1.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.navigation .newitem1 {
+    animation: showup 1s forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.album, .album1 {
+    animation: popout 1s forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    width: 90%;
+    max-width: 1200px;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+/*newly added items start faded out and translated 400px upwards on the y-axis*/
+
+
+.prev, .next {
+    color: black;
+}
+
+.prev {
+    left:0;
+}
+
+.inspirationRow  {
+    animation: popout 1s forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes popout {
+    0% { transform: scale(0); }
+    100% { transform: scale(1) }
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:1;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes slideinright {
+    0% { margin-right:-50vh; }
+    100% { margin-right:3vh; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:1;width:355px;}
+}
+
+
+
+
+
+
+
